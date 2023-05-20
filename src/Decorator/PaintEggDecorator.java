@@ -8,7 +8,7 @@ public class PaintEggDecorator extends EggDecorator{
     }
 
     private void setPaintDecoration() {
-        System.out.println("Decoration Type: Paint");
+        System.out.println("The egg has been painted.");
     }
 
     @Override

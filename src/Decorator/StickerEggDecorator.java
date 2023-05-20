@@ -7,7 +7,7 @@ public class StickerEggDecorator extends EggDecorator{
     }
 
     private void setStickerDecoration() {
-        System.out.println("Decoration Type: Sticker");
+        System.out.println("Sticker has been applied to the egg.");
     }
 
     @Override

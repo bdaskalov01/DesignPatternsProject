@@ -10,6 +10,5 @@ public abstract class EggDecorator implements Egg{
 
     public void addEgg() {
         decoratedEgg.addEgg();
-        // TODO Return egg object
     }
 }
