@@ -3,6 +3,6 @@ package Eggs;
 public class Hen implements Egg {
     @Override
     public void addEgg() {
-        System.out.println("Egg type: Hen");
+        System.out.println("Hen egg has been created.");
     }
 }

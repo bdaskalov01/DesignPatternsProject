@@ -4,11 +4,7 @@ import Decorator.PaintEggDecorator;
 import Factory.EggFactory;
 import Eggs.Egg;
 import Decorator.StickerEggDecorator;
-import Observer.Basket;
 import Utility.RNG;
-import Observer.*;
-import java.util.Observer;
-import java.util.Observable;
 
 public class Rabbit {
     private static Rabbit rabbit = new Rabbit();
@@ -20,8 +16,6 @@ public class Rabbit {
     }
 
     EggFactory eggFactory = new EggFactory();
-
-    // TODO function to create egg
     Egg egg1 = eggFactory.getShape("DINO");
 
     public Egg createEgg() {
@@ -42,9 +36,7 @@ public class Rabbit {
         }
         return null;
     }
-
-
-    // TODO function to decorate egg
+    
     Egg decoratedEgg1 = new StickerEggDecorator(egg1);
 
     public void decorateEgg(Egg egg) {
@@ -63,15 +55,5 @@ public class Rabbit {
                 break;
         }
     }
-
-    /*
-    public Egg getDecoratedEgg1() {
-        return decoratedEgg1;
-    }
-
-    public void setDecoratedEgg1(Egg decoratedEgg1) {
-        this.decoratedEgg1 = decoratedEgg1;
-    }
-     */
 
 }
